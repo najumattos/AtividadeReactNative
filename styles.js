@@ -15,6 +15,25 @@ const cores = {
 };
 
 export const styles = StyleSheet.create({
+/*MODELO */
+
+ resultadoTitulo: {
+        fontSize: 16,
+        color: '#666',
+    },
+    
+    resultadoValor: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        color: '#000',
+        marginVertical: 5,
+    },
+resultadoSub: {
+        fontSize: 12,
+        color: '#888',
+    },
+
+
     // --- ESTILOS COMPARTILHADOS ---
     container: {
         flex: 1,
@@ -85,7 +104,6 @@ export const styles = StyleSheet.create({
         marginTop: 5,
     },
 
-    // --- CALCULADORA SALÁRIO ---
     resultContainer: {
         marginTop: 30,
         padding: 20,
@@ -133,3 +151,4 @@ export const styles = StyleSheet.create({
         color: cores.textoCinza,
     }
 });
+

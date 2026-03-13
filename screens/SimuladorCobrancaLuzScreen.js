@@ -66,10 +66,10 @@ export default function SimuladorCobrancaLuzScreen({ navigation }) {
             <Button title="Calcular Fatura" onPress={calcularConta} color="#2196F3" />
 
             {total !== null && (
-                <View style={stylesLayout.resultadoContainer}>
-                    <Text style={stylesLayout.resultadoTitulo}>Resumo da Fatura</Text>
-                    <Text style={stylesLayout.resultadoValor}>R$ {total}</Text>
-                    <Text style={stylesLayout.resultadoSub}>Tarifa aplicada: R$ {tarifas[bandeira].valor}/kWh</Text>
+                <View style={styles.resultContainer}>
+                    <Text style={styles.resultadoTitulo}>Resumo da Fatura</Text>
+                    <Text style={styles.resultadoValor}>R$ {total}</Text>
+                    <Text style={styles.resultadoSub}>Tarifa aplicada: R$ {tarifas[bandeira].valor}/kWh</Text>
                 </View>
             )}
 

@@ -4,12 +4,13 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Ionicons } from '@expo/vector-icons'; // Biblioteca de ícones
 
 // Navegação
-import HomeScreen from "./screens/HomeScreen";
-import SimuladorPedagioScreen from './screens/SimuladorPedagioScreen';
-import SimuladorCobrancaLuzScreen from './screens/SimuladorCobrancaLuzScreen';
-import CalculadoraSalarioScreen from './screens/CalculadoraSalarioScreen';
-import TabuleiroXadrezScreen from './screens/TabuleiroXadrezScreen';
-import CalculadoraIMCScreen from './screens/CalculadoraIMCScreen';
+import HomeScreen                  from "./screens/HomeScreen";
+import SimuladorPedagioScreen      from './screens/SimuladorPedagioScreen';
+import SimuladorCobrancaLuzScreen  from './screens/SimuladorCobrancaLuzScreen';
+import CalculadoraSalarioScreen    from './screens/CalculadoraSalarioScreen';
+import TabuleiroXadrezScreen       from './screens/TabuleiroXadrezScreen';
+import CalculadoraIMCScreen        from './screens/CalculadoraIMCScreen';
+import ModeloScreen                from './screens/ModeloScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -98,6 +99,15 @@ export default function App() {
         <Drawer.Screen 
           name='Calculadora IMC' 
           component={CalculadoraIMCScreen} 
+          options={{
+            drawerIcon: ({ color, size }) => (
+              <Ionicons name="fitness-outline" size={size} color={color} />
+            )
+          }}
+        />
+          <Drawer.Screen 
+          name='Modelo Atividade' 
+          component={ModeloScreen} 
           options={{
             drawerIcon: ({ color, size }) => (
               <Ionicons name="fitness-outline" size={size} color={color} />
